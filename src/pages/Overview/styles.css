@@ -10,6 +10,7 @@ flex:1;
  flex: 3;
 }
 .over-head{
+    margin-left: -60px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,7 @@ flex:1;
     display: flex;
     flex-direction: row;
     column-gap: 88px;
+    margin-left: -8px;
 }
 .ot-1{
     margin-left: -50px;
@@ -60,11 +62,15 @@ flex:1;
 .ot-p{
     margin-left: 60px;
 }
+.ot-p9{
+    margin-left: 50px;
+}
 .over-mid{
+    margin-left: -60px;
     margin-top: 15px;
     padding: 20px;
     height: 400px;
-    width: 700px;
+    width: 770px;
     margin-bottom: 5px;
     border-radius: 10px;
     color: #000;
@@ -76,13 +82,15 @@ flex:1;
 }
 .om-main{
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .ov-down{
     margin-top: 10px;
     display: flex;
     column-gap: 15px;
+    margin-left: -60px;
+    font-size: 14px;
 }
 .od-left{
     margin-top: 5px;
@@ -226,15 +234,25 @@ span{
     border-radius: 6px;
     height: 28px;
     color: #FFFFFF;
+    
     border: 1px solid #FEC400;
+}
+.odr3-d2 p{
+    font-size: 10px;
+    margin-top: 6px;
 }
 .odr4-d2{
     background-color:  #29CC97;
     border-radius: 6px;
     height: 26px;
-    width: 45px;
+    width: 35px;
     color: #FFFFFF;
     border: 1px solid #29CC97;
+}
+.odr4-d2 p{
+    font-size: 10px;
+    margin-top: 6px;
+    margin-left: 3px;
 }
 .odr5-d2{
     background-color: #F0F1F7;
@@ -242,6 +260,10 @@ span{
     height: 25px;
     color: #9FA2B4;
     border: 1px solid #F0F1F7;
+}
+.odr5-d2{
+    font-size: 10px;
+    margin-top: 6px;
 }
 .odr3-img{
     width: 15px;

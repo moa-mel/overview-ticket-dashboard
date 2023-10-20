@@ -9,8 +9,10 @@ import Chart from '../../components/Chart'
 import { PartData } from '../../Dummydata'
 import circle from "../../images/circle.png"
 import active from "../../images/active.png"
+import { LineChart, Line, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
-const Overview = () => {
+
+const Overview = ({ data, dataKey }) => {
     return (
         <div className='over ' >
             <div className='over-left'>
@@ -47,7 +49,7 @@ const Overview = () => {
                     <div className='ot-1'>
                         <div>
                             <p className='ot-up1'>Open</p>
-                            <p className='ot-p'>43</p>
+                            <p className='ot-p9'>43</p>
                         </div>
                     </div>
                     <div className='ot-1'>
@@ -69,7 +71,20 @@ const Overview = () => {
                                     <p><span className='uiloc-sp1'>--</span>Yesterday</p>
                                 </div>
                             </div>
-                            <Chart data={PartData} dataKey="fig" />
+                            {/* <Chart data={PartData} dataKey="fig" /> */}
+                            < ResponsiveContainer width="100%" aspect={4 / 3}>
+                                <LineChart
+                                    data={PartData}
+                                >
+                                    <XAxis dataKey="name" />
+                                    <YAxis />
+                                    <CartesianGrid strokeDasharray="3 3"/>
+                                    <Tooltip />
+                                    <Line type="monotone" dataKey="pv" fill="#EBD579" />
+                                    <Line type="monotone" dataKey="uv" fill="#DFE0EB" />
+                                </LineChart>
+                            </ResponsiveContainer>
+
                         </div>
                         <p className='overm-sp'></p>
                         <div>
