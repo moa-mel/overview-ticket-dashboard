@@ -190,7 +190,29 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .tm-up{
+        display: flex;
+        column-gap: 6px;
+        font-size: 10px;
+    }
     .tick-main{
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+        margin-left: -40px;
+    }
+    .tm-up{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+        margin-left: -10px;
+    }
+    .tm-mid{
         position: relative;
         display: flex;
         flex-direction: column;

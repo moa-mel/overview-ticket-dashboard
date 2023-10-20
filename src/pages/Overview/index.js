@@ -11,7 +11,7 @@ import active from "../../images/active.png"
 import { LineChart, Line, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 
-const Overview = ({sidebarOpen, openSidebar}) => {
+const Overview = () => {
     return (
         <div className='over ' >
             <div className='over-left'>
@@ -33,12 +33,11 @@ const Overview = ({sidebarOpen, openSidebar}) => {
                 </div>
                 {/* top */}
                 <div className='over-top'>
-                    <div className='klm'>
                     <div className='ot-1'>
                         <div className='otu-1'>
                             <p className='ot-up1'>Unsolved</p>
                             <p className='ot-p'>60</p>
-                        </div>
+                    </div>
                     </div>
                     <div className='ot-1'>
                         <div className='otu-2'>
@@ -46,8 +45,7 @@ const Overview = ({sidebarOpen, openSidebar}) => {
                             <p className='ot-p'>16</p>
                         </div>
                     </div>
-                    </div>
-                    <div className='asdf'>
+                    
                     <div className='ot-1'>
                         <div className='otu-3'>
                             <p className='ot-up1'>Open</p>
@@ -60,7 +58,6 @@ const Overview = ({sidebarOpen, openSidebar}) => {
                             <p className='ot-p'>64</p>
                         </div>
                     </div>
-                </div>
                 </div>
                 {/* middle */}
                 <div className='over-mid'>
