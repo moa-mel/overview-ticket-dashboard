@@ -38,7 +38,7 @@
     height: 30px;
 }
 .tick-main{
-    margin-top: 5px;
+    margin-top: 35px;
     padding: 20px;
     height: 740px;
     width: 850px;
@@ -95,9 +95,18 @@
     background-color:  #F12B2C;
     border-radius: 16px;
     height: 30px;
-    width: 45px;
+    width: 42px;
     color: #FFFFFF;
     border: 1px solid #F12B2C;
+}
+.rd-p p{
+    font-size: 11px;
+}
+.rd-p2 p{
+    font-size: 11px;
+}
+.rd-p3 p{
+    font-size: 11px;
 }
 .rd-p2{
     margin-top: -9px;
@@ -105,7 +114,7 @@
     background-color:  #FEC400;
     border-radius: 16px;
     height: 30px;
-    width: 45px;
+    width: 39px;
     color: #FFFFFF;
     border: 1px solid #FEC400;
 }
@@ -115,7 +124,7 @@
     background-color:  #29CC97;
     border-radius: 16px;
     height: 30px;
-    width: 65px;
+    width: 59px;
     color: #FFFFFF;
     border: 1px solid #29CC97;
 }
