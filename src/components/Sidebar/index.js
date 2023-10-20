@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import logo from "../../images/logo.png";
 import overv from "../../images/1. overview.png";
@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 const Sidebar = () => {
    const [selected, setSelected] = useState(0);
    const [expanded, setExpanded] = useState(true);
+   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
    const sidebarVariants = {
       true: {
@@ -25,14 +26,27 @@ const Sidebar = () => {
       },
    };
 
+   useEffect(() => {
+    const handleResize = () => {
+       setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+       window.removeEventListener('resize', handleResize);
+    };
+ }, []);
+
    return (
       <>
+      {isMobile && (
          <div className='bars'
             style={expanded ? { left: '60%' } : { left: '5%' }}
             onClick={() => setExpanded(!expanded)}
          >
             <p>=</p>
          </div>
+      )}
          <motion.div
             className='sidebar'
             variants={sidebarVariants}
