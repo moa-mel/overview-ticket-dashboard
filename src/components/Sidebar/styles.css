@@ -50,3 +50,26 @@ margin-top: 33px;
     margin-left: 24px;
     margin-top: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        position: fixed;
+        z-index: 9;
+        background: grey;
+        width: 55%;
+        padding-right: 1rem;
+        height: 100%;
+    }
+    .sb-up{
+        display:block;
+    }
+   .bars{
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    z-index: 9;
+    
+    padding: 10px;
+    border-radius: 10px;
+   }
+}

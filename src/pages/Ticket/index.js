@@ -40,7 +40,7 @@ const Ticket = () => {
                 {/* header */}
                 <div>
                     <div className='tick-head'>
-                        <p>Ticket</p>
+                        <p className='fire'>Ticket</p>
                         <div className='tick-icon'>
                             <img src={search} alt='' className='tick-icn' />
                             <img src={notification} alt='' className='tick-icn2' />

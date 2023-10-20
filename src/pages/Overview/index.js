@@ -5,14 +5,13 @@ import notification from "../../images/new.png"
 import plus from "../../images/inactive.png"
 import avatar from "../../images/photo.png"
 import './styles.css'
-import Chart from '../../components/Chart'
 import { PartData } from '../../Dummydata'
 import circle from "../../images/circle.png"
 import active from "../../images/active.png"
 import { LineChart, Line, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 
-const Overview = ({ data, dataKey }) => {
+const Overview = ({sidebarOpen, openSidebar}) => {
     return (
         <div className='over ' >
             <div className='over-left'>
@@ -21,7 +20,7 @@ const Overview = ({ data, dataKey }) => {
             <div className=' over-right' >
                 {/* header */}
                 <div className='over-head'>
-                    <p>Overview</p>
+                    <p className='alex'>Overview</p>
                     <div className='oh-icon'>
                         <img src={search} alt='' className='oh-icn' />
                         <img src={notification} alt='' className='oh-icn2' />
@@ -34,30 +33,34 @@ const Overview = ({ data, dataKey }) => {
                 </div>
                 {/* top */}
                 <div className='over-top'>
+                    <div className='klm'>
                     <div className='ot-1'>
-                        <div >
+                        <div className='otu-1'>
                             <p className='ot-up1'>Unsolved</p>
                             <p className='ot-p'>60</p>
                         </div>
                     </div>
                     <div className='ot-1'>
-                        <div >
+                        <div className='otu-2'>
                             <p className='ot-up1'>Overdue</p>
                             <p className='ot-p'>16</p>
                         </div>
                     </div>
+                    </div>
+                    <div className='asdf'>
                     <div className='ot-1'>
-                        <div>
+                        <div className='otu-3'>
                             <p className='ot-up1'>Open</p>
                             <p className='ot-p9'>43</p>
                         </div>
                     </div>
                     <div className='ot-1'>
-                        <div >
+                        <div className='otu-4'>
                             <p className='ot-up1'>On hold</p>
                             <p className='ot-p'>64</p>
                         </div>
                     </div>
+                </div>
                 </div>
                 {/* middle */}
                 <div className='over-mid'>
@@ -87,7 +90,7 @@ const Overview = ({ data, dataKey }) => {
 
                         </div>
                         <p className='overm-sp'></p>
-                        <div>
+                        <div className='jrkvn'>
                             <div className='omm-1'>
                                 <p className='omm1-p1'>Resolved</p>
                                 <p className='omm1-p2'>449</p>
