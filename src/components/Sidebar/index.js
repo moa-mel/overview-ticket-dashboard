@@ -44,7 +44,7 @@ const Sidebar = () => {
             style={expanded ? { left: '60%' } : { left: '5%' }}
             onClick={() => setExpanded(!expanded)}
          >
-            <p>=</p>
+           {expanded ? ( <p>x</p>):(<p>=</p>)}
          </div>
       )}
          <motion.div
